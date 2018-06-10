@@ -1,19 +1,38 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { addLocaleData, IntlProvider, FormattedMessage } from 'react-intl';
+import messagesPl from './translations/pl';
+import messagesEn from './translations/en';
+
+let plLocaleData = require('react-intl/locale-data/pl');
+addLocaleData(plLocaleData);
+
+const i18nConfig = {
+  en: {
+    locale: 'en',
+    messages: messagesEn,
+  },
+  pl: {
+    locale: 'pl',
+    messages: messagesPl,
+  },
+};
 
 class App extends Component {
+  browserLanguage = 'en';
+
+  constructor(props) {
+    super(props);
+    this.browserLanguage = navigator.language;
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <IntlProvider locale={i18nConfig[this.browserLanguage] ? i18nConfig[this.browserLanguage].locale : i18nConfig.en.locale}
+                    messages={i18nConfig[this.browserLanguage] ? i18nConfig[this.browserLanguage].messages : i18nConfig.en.messages}>
+        <FormattedMessage id="test.test1"/>
+      </IntlProvider>
     );
   }
 }
