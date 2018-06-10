@@ -1,23 +1,11 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { addLocaleData, IntlProvider, FormattedMessage } from 'react-intl';
-import messagesPl from './translations/pl';
-import messagesEn from './translations/en';
+import { addLocaleData, IntlProvider } from 'react-intl';
+import Nav from './shared/components/nav/nav.component';
+import { i18nConfig } from './i18n-config';
 
 let plLocaleData = require('react-intl/locale-data/pl');
 addLocaleData(plLocaleData);
-
-const i18nConfig = {
-  en: {
-    locale: 'en',
-    messages: messagesEn,
-  },
-  pl: {
-    locale: 'pl',
-    messages: messagesPl,
-  },
-};
 
 class App extends Component {
   browserLanguage = 'en';
@@ -31,7 +19,7 @@ class App extends Component {
     return (
       <IntlProvider locale={i18nConfig[this.browserLanguage] ? i18nConfig[this.browserLanguage].locale : i18nConfig.en.locale}
                     messages={i18nConfig[this.browserLanguage] ? i18nConfig[this.browserLanguage].messages : i18nConfig.en.messages}>
-        <FormattedMessage id="test.test1"/>
+        <Nav/>
       </IntlProvider>
     );
   }

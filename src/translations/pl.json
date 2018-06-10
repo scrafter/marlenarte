@@ -1,3 +1,20 @@
 {
-  "test.test1": "polish text"
+  "NAV.ABOUT_ME": "O mnie",
+  "NAV.PORTFOLIO": "Portfolio",
+  "NAV.CONTACT": "Kontakt",
+  "NAV.SOCIAL_MEDIA": "Social media",
+  "ABOUT_ME.TITLE": "Who I am?",
+  "ABOUT_ME.DESCRIPTION": "description",
+  "ABOUT_ME.WHAT_I_DO": "What do I do?",
+  "ABOUT_ME.DRAW": "Portrait drawing",
+  "ABOUT_ME.OIL_PAINTING": "Oil painting",
+  "ABOUT_ME.ACRYLIC_PAINTING": "Acrylic painting",
+  "PORTFOLIO.TITLE": "Portfolio",
+  "CONTACT.TITLE": "Contact me",
+  "CONTACT.EMAIL": "E-mail",
+  "CONTACT.TOPIC": "Topic",
+  "CONTACT.MESSAGE": "Message...",
+  "CONTACT.SEND": "Send",
+  "SOCIAL_MEDIA.TITLE": "Social media",
+  "FOOTER.CREATED_BY": "Created by"
 }
