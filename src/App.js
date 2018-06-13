@@ -4,6 +4,7 @@ import { addLocaleData, IntlProvider } from 'react-intl';
 import Nav from './shared/components/nav/nav.component';
 import { i18nConfig } from './i18n-config';
 import Homepage from './components/homepage/homepage.component';
+import Footer from './shared/components/footer/footer.component';
 
 let plLocaleData = require('react-intl/locale-data/pl');
 addLocaleData(plLocaleData);
@@ -23,6 +24,7 @@ class App extends Component {
         <div>
           <Nav/>
           <Homepage/>
+          <Footer/>
         </div>
       </IntlProvider>
     );
