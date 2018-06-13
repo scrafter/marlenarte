@@ -18,3 +18,8 @@ export const Headline = styled.h1`
     margin-left: -20px;
   }
 `;
+
+export const HeadlineWhite = styled(Headline)`
+  color: #fff;
+  &:after { display: none; }
+`;
