@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
 export const PortfolioItemStyled = styled.div`
-  width: calc(50% - 60px);
+  width: calc(50% - 50px);
   margin-bottom: 90px;
+  position: relative;
   
   .photo-box {
     margin-bottom: 30px;
-    height: 550px;
-    width: 550px;
+    width: 100%;
+    padding-bottom: 100%;
     background-size: cover;
     background-position: center;
   }

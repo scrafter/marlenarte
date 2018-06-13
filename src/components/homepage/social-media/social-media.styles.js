@@ -19,7 +19,4 @@ export const SocialMediaStyled = styled.section`
     cursor: pointer;
     transition: all 0.3s ease-in-out;
   }
-  .facebook:hover { color: #3b5998; }
-  .instagram:hover { color: #8a3ab9; }
-  .linkeid:hover { color: #0077B5; }
 `;
