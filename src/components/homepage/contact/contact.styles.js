@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import img from '../../../assets/images/contact-bg.png';
+import * as variables from '../../../shared/style-variables';
 
 export const ContactStyled = styled.section`
   display: flex;
@@ -10,7 +11,12 @@ export const ContactStyled = styled.section`
   background: url(${img}) no-repeat center;
   background-size: cover;
   width: 100%;
-  
+  @media (max-width: ${variables.screenL}) {
+    padding: 50px 60px;
+  }
+  @media (max-width: ${variables.screenS}) {
+    padding: 50px 20px;
+  }
   h1 {
     margin-bottom: 35px;
   }
@@ -20,5 +26,11 @@ export const ContactStyled = styled.section`
   input,
   textarea {
     margin-bottom: 15px;
+  }
+  button {
+    @media (max-width: ${variables.screenS}) {
+      float: none;
+      width: 100%;
+    }
   }
 `;

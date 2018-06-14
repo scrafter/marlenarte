@@ -1,9 +1,14 @@
 import styled from 'styled-components';
+import * as variables from '../../../../shared/style-variables';
 
 export const PortfolioItemStyled = styled.div`
   width: calc(50% - 50px);
   margin-bottom: 90px;
   position: relative;
+  @media (max-width: ${variables.screenMmax}) {
+    width: 100%;
+    margin-bottom: 50px;
+  }
   
   .photo-box {
     margin-bottom: 30px;

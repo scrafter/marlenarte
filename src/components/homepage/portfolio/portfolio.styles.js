@@ -1,7 +1,12 @@
 import styled from 'styled-components';
+import * as variables from '../../../shared/style-variables';
 
 export const PortfolioStyled = styled.section`
   padding: 75px 150px 150px;
+  
+  @media (max-width: ${variables.screenS}) {
+    padding: 75px 20px 150px;
+  }
   
   .container {
     display: flex;

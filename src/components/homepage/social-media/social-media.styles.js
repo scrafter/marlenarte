@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import * as variables from '../../../shared/style-variables';
 
 export const SocialMediaStyled = styled.section`
   padding: 150px 300px;
@@ -6,7 +7,12 @@ export const SocialMediaStyled = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+  @media (max-width: ${variables.screenL}) {
+    padding: 150px 50px;
+  }
+  @media (max-width: ${variables.screenS}) {
+    padding: 100px 15px;
+  }
   h1 {
     margin-bottom: 150px;
   }
@@ -14,6 +20,11 @@ export const SocialMediaStyled = styled.section`
     width: 100%;
     display: flex;
     justify-content: space-between;
+    text-align: center;
+    @media (max-width: ${variables.screenS}) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
   .mdi-icon {
     cursor: pointer;

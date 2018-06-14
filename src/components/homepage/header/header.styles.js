@@ -10,6 +10,7 @@ export const HeaderStyled = styled.header`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 0 20px;
 `;
 
 export const H1Styled = styled.h1`
@@ -17,6 +18,7 @@ export const H1Styled = styled.h1`
   margin-bottom: 35px;
   color: #fff;
   font-style: italic;
+  text-align: center;
 `;
 
 export const H3Styled = styled.h3`

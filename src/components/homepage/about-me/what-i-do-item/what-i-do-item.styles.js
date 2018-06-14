@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import * as variables from '../../../../shared/style-variables';
 
 export const WhatIDoItem = styled.div`
   width: calc(33.33% - 1px);
@@ -13,6 +14,13 @@ export const WhatIDoItem = styled.div`
   word-spacing: 99999px;
   text-align: center;
   position: relative;
+  @media (max-width: ${variables.screenM}) {
+    width: 100%;
+    padding-bottom: 100%;
+    &:not(:last-of-type) {
+      margin-bottom: 1px;
+    }
+  }
   
   span {
     position: absolute;

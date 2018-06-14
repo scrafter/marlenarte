@@ -1,7 +1,14 @@
 import styled from 'styled-components';
+import * as variables from '../../../shared/style-variables';
 
 export const AboutMeStyled = styled.section`
   padding: 75px 150px;
+  @media (max-width: ${variables.screenMmax}) {
+    padding: 75px 50px;
+  }
+  @media (max-width: ${variables.screenS}) {
+    padding: 75px 20px;
+  }
 `;
 
 export const AboutMeDescription = styled.p`
@@ -28,4 +35,7 @@ export const AboutMeDescription = styled.p`
 export const WhatIDo = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: ${variables.screenM}) {
+    flex-wrap: wrap;
+  }
 `;
