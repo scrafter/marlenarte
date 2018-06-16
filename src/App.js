@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import './App.css';
-import '../node_modules/native-toast/dist/native-toast.css';
 
 import { addLocaleData, IntlProvider } from 'react-intl';
 import Nav from './shared/components/nav/nav.component';

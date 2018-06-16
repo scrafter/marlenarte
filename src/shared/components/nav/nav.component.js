@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { NavStyled, StyledList, StyledListItem } from './nav.styles';
+import NavDropdown from './nav-dropdown/dropdown.component';
 
-class Nav extends Component {
+export default class Nav extends Component {
   constructor() {
     super();
     this.handleScroll = this.handleScroll.bind(this);
@@ -48,9 +49,8 @@ class Nav extends Component {
             </a>
           </StyledListItem>
         </StyledList>
+        <NavDropdown/>
       </NavStyled>
     );
   }
 }
-
-export default Nav;

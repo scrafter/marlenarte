@@ -12,7 +12,9 @@ export const NavStyled = styled.nav`
   top: 0;
   left: 0;
   right: 0;
-  
+  @media (max-width: ${variables.screenSmax}) {
+  height: 75px;
+  }
   &.sticky {
     height: 75px;
     box-shadow: 0 5px 7px -4px rgba(0,0,0,0.29);
@@ -23,6 +25,9 @@ export const StyledList = styled.ul`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: ${variables.screenSmax}) {
+    display: none;
+  }
 `;
 
 export const StyledListItem = styled.li`
