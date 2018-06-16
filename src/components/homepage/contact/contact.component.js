@@ -6,7 +6,6 @@ import Input from '../../../shared/components/input/input.component';
 import Textarea from '../../../shared/components/textarea/textarea.component';
 import Button from '../../../shared/components/button/button.component';
 import { BACKENDLESS_URL } from '../../../shared/constants';
-import nativeToast from 'native-toast';
 import messagesPl from '../../../translations/pl';
 import messagesEn from '../../../translations/en';
 
@@ -41,13 +40,13 @@ export default class Contact extends Component {
     xhr.onreadystatechange = () => {
       if (xhr.readyState === 4 && xhr.status === 200) {
         this.refs.form.reset();
-        nativeToast.warning({
+        window.nativeToast.warning({
           type: 'success',
           message: this.getNotificationText('NOTIFICATION.SENT_SUCCESS'),
           position: 'bottom',
         });
       } else if (xhr.readyState === 4 && xhr.status === 200) {
-        nativeToast.warning({
+        window.nativeToast.warning({
           type: 'error',
           message: this.getNotificationText('NOTIFICATION.SENT_ERROR'),
           position: 'bottom',
