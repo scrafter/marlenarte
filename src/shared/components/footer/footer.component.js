@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { FooterStyled } from './footer.styles';
+import { FormattedMessage } from 'react-intl';
 
 export default class Footer extends Component {
   year = '';
@@ -21,7 +22,10 @@ export default class Footer extends Component {
         </div>
 
         <p className="signiture">
-          {this.year} | Created by <a href="http://chillsoft.net">ChillSoft.net</a>
+          {this.year} | <FormattedMessage id="FOOTER.CREATED_BY" />&nbsp;
+          <a href="http://chillsoft.net"
+             rel="noopener noreferrer"
+             target="_blank">ChillSoft.net</a>
         </p>
       </FooterStyled>
     );

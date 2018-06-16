@@ -16,5 +16,7 @@
   "CONTACT.MESSAGE": "Message...",
   "CONTACT.SEND": "Send",
   "SOCIAL_MEDIA.TITLE": "Social media",
-  "FOOTER.CREATED_BY": "Created by"
+  "FOOTER.CREATED_BY": "Created by",
+  "NOTIFICATION.SENT_SUCCESS": "Sent successfully!",
+  "NOTIFICATION.SENT_ERROR": "Error. Please try again."
 }

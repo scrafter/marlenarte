@@ -1,26 +1,30 @@
 import React, { Component } from 'react';
+
 import './App.css';
+import '../node_modules/native-toast/dist/native-toast.css';
+
 import { addLocaleData, IntlProvider } from 'react-intl';
 import Nav from './shared/components/nav/nav.component';
-import { i18nConfig } from './i18n-config';
 import Homepage from './components/homepage/homepage.component';
 import Footer from './shared/components/footer/footer.component';
+import messagesEn from './translations/en';
+import messagesPl from './translations/pl';
 
 let plLocaleData = require('react-intl/locale-data/pl');
 addLocaleData(plLocaleData);
 
-class App extends Component {
-  browserLanguage = 'en';
+const messages = {
+  'pl': messagesPl,
+  'en': messagesEn,
+};
+const browserLanguage = navigator.language.split(/[-_]/)[0];
 
-  constructor(props) {
-    super(props);
-    this.browserLanguage = navigator.language;
-  }
+class App extends Component {
 
   render() {
     return (
-      <IntlProvider locale={i18nConfig[this.browserLanguage] ? i18nConfig[this.browserLanguage].locale : i18nConfig.en.locale}
-                    messages={i18nConfig[this.browserLanguage] ? i18nConfig[this.browserLanguage].messages : i18nConfig.en.messages}>
+      <IntlProvider locale={browserLanguage}
+                    messages={messages[browserLanguage]}>
         <div>
           <Nav/>
           <Homepage/>
