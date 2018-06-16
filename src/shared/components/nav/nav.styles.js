@@ -6,6 +6,7 @@ export const NavStyled = styled.nav`
   height: 150px;
   display: flex;
   justify-content: center;
+  align-items: center;
   transition: all 0.3s linear;
   z-index: 10;
   position: fixed;
@@ -13,11 +14,20 @@ export const NavStyled = styled.nav`
   left: 0;
   right: 0;
   @media (max-width: ${variables.screenSmax}) {
-  height: 75px;
+    height: 75px;
   }
   &.sticky {
     height: 75px;
     box-shadow: 0 5px 7px -4px rgba(0,0,0,0.29);
+  }
+  .language-switch {
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    margin-top: -15px;
   }
 `;
 

@@ -2,8 +2,19 @@ import React, { Component } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { NavStyled, StyledList, StyledListItem } from './nav.styles';
 import NavDropdown from './nav-dropdown/dropdown.component';
+import propTypes from 'prop-types';
 
 export default class Nav extends Component {
+  flags = {
+    pl: 'gb',
+    en: 'pl',
+  };
+
+  static propTypes = {
+    language: propTypes.string.isRequired,
+    onLanguageChange: propTypes.func.isRequired,
+  };
+
   constructor() {
     super();
     this.handleScroll = this.handleScroll.bind(this);
@@ -27,6 +38,8 @@ export default class Nav extends Component {
   render() {
     return (
       <NavStyled className={this.state.scrolled ? 'sticky' : ''}>
+        <div className={'language-switch flag-icon flag-icon-' + this.flags[this.props.language]}
+            onClick={this.props.onLanguageChange}></div>
         <StyledList class={this.state.open ? 'open' : ''}>
           <StyledListItem>
             <a href="#about-me">
