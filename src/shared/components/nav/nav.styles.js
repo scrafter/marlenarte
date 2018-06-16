@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import * as variables from '../../style-variables';
 
 export const NavStyled = styled.nav`
   background-color: #fff;
@@ -28,4 +29,14 @@ export const StyledListItem = styled.li`
   font-size: 24px;
   font-weight: 300;
   margin: 0 25px;
+  
+  a {
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    
+    &:hover {
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
 `;

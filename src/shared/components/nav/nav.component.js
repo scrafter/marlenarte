@@ -3,10 +3,12 @@ import { FormattedMessage } from 'react-intl';
 import { NavStyled, StyledList, StyledListItem } from './nav.styles';
 
 class Nav extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.handleScroll = this.handleScroll.bind(this);
-    this.state = { scrolled: false };
+    this.state = {
+      scrolled: false,
+    };
   }
 
   componentDidMount() {
@@ -24,11 +26,27 @@ class Nav extends Component {
   render() {
     return (
       <NavStyled className={this.state.scrolled ? 'sticky' : ''}>
-        <StyledList>
-          <StyledListItem><FormattedMessage id="NAV.ABOUT_ME"/></StyledListItem>
-          <StyledListItem><FormattedMessage id="NAV.PORTFOLIO"/></StyledListItem>
-          <StyledListItem><FormattedMessage id="NAV.CONTACT"/></StyledListItem>
-          <StyledListItem><FormattedMessage id="NAV.SOCIAL_MEDIA"/></StyledListItem>
+        <StyledList class={this.state.open ? 'open' : ''}>
+          <StyledListItem>
+            <a href="#about-me">
+              <FormattedMessage id="NAV.ABOUT_ME"/>
+            </a>
+          </StyledListItem>
+          <StyledListItem>
+            <a href="#portfolio">
+              <FormattedMessage id="NAV.PORTFOLIO"/>
+            </a>
+          </StyledListItem>
+          <StyledListItem>
+            <a href="#contact">
+              <FormattedMessage id="NAV.CONTACT"/>
+            </a>
+          </StyledListItem>
+          <StyledListItem>
+            <a href="#social-media">
+              <FormattedMessage id="NAV.SOCIAL_MEDIA"/>
+            </a>
+          </StyledListItem>
         </StyledList>
       </NavStyled>
     );

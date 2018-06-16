@@ -5,16 +5,27 @@ import AboutMe from './about-me/about-me.component';
 import Portfolio from './portfolio/portfolio.component';
 import Contact from './contact/contact.component';
 import SocialMedia from './social-media/social-media.component';
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
+
+configureAnchors({offset: -40, scrollDuration: 200});
 
 export default class Homepage extends Component {
   render() {
     return (
       <HomepageStyled>
         <Header/>
-        <AboutMe/>
-        <Portfolio/>
-        <Contact/>
-        <SocialMedia/>
+        <ScrollableAnchor id={'about-me'}>
+          <AboutMe/>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'portfolio'}>
+          <Portfolio/>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'contact'}>
+          <Contact/>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'social-media'}>
+          <SocialMedia/>
+        </ScrollableAnchor>
       </HomepageStyled>
     );
   }
