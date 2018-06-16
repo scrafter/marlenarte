@@ -4,6 +4,7 @@ import { Headline } from '../../../shared/components/headline/headline.styles';
 import { FormattedMessage } from 'react-intl';
 import { Subtitle } from '../../../shared/components/subtitle/subtitle.styles';
 import { WhatIDoItem } from './what-i-do-item/what-i-do-item.styles';
+import { FormatQuoteOpenIcon } from 'mdi-react';
 
 export default class AboutMe extends Component {
   render() {
@@ -13,6 +14,7 @@ export default class AboutMe extends Component {
           <FormattedMessage id="ABOUT_ME.TITLE"/>
         </Headline>
         <AboutMeDescription>
+          <FormatQuoteOpenIcon size={120}/>
           <FormattedMessage id="ABOUT_ME.DESCRIPTION"/>
         </AboutMeDescription>
 

@@ -21,14 +21,10 @@ export const AboutMeDescription = styled.p`
   position: relative;
   margin-bottom: 110px;
   
-  &:before {
-    content: '"';
-    font-size: 270px;
-    font-weight: 300;
-    color: #000;
+  .mdi-icon {
     position: absolute;
-    left: -90px;
-    top: 50px;
+    left: -50px;
+    top: -60px;
   }
 `;
 
