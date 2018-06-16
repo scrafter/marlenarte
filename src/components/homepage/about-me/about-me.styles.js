@@ -25,6 +25,9 @@ export const AboutMeDescription = styled.p`
     position: absolute;
     left: -50px;
     top: -60px;
+    @media (max-width: ${variables.screenS}) {
+      left: -30px;
+    } 
   }
 `;
 

@@ -15,6 +15,10 @@ export const FooterStyled = styled.footer`
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
   }
   .right {
     text-align: right;

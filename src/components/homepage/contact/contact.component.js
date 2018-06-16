@@ -31,7 +31,7 @@ export default class Contact extends Component {
 
     const emailData = JSON.stringify({
       subject: 'Wiadomość ze strony Marlenarte',
-      to: ['mankatomek@gmail.com'],
+      to: ['misiewicz.marlena08@gmail.com'],
       bodyparts: {
         htmlmessage: content,
       },

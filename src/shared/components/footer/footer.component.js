@@ -13,12 +13,20 @@ export default class Footer extends Component {
       <FooterStyled>
         <div>
           <p>Madlenarte Marlena Misiewicz</p>
-          <p>NIP: 123 100 23 21</p>
-          <p>Plac Kościuszki 13/3, Wrocław</p>
+          {/*<p>NIP: -</p>*/}
+          <p>Plac Kościuszki 17/7, Wrocław</p>
         </div>
         <div className="right">
-          <p>tel. 123 321 123</p>
-          <p>email@interia.pl</p>
+          <p>
+            <a href="tel:+496170961709">
+              tel. 575 638 778
+            </a>
+          </p>
+          <p>
+            <a href="mailto:misiewicz.marlena08@gmail.com">
+              misiewicz.marlena08@gmail.com
+            </a>
+          </p>
         </div>
 
         <p className="signiture">
