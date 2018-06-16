@@ -16,7 +16,7 @@ export const FooterStyled = styled.footer`
     flex-direction: column;
     justify-content: flex-end;
     a {
-      color: #fff;
+      color: rgba(255, 255, 255, 0.7);
       text-decoration: none;
     }
   }
