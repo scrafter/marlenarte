@@ -9,6 +9,9 @@ export const PortfolioItemStyled = styled.div`
     width: 100%;
     margin-bottom: 50px;
   }
+  @media (max-width: ${variables.screenSmax}) {
+    margin-bottom: 25px;
+  }
   
   .photo-box {
     margin-bottom: 30px;

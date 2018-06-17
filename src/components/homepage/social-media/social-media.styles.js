@@ -10,11 +10,14 @@ export const SocialMediaStyled = styled.section`
   @media (max-width: ${variables.screenL}) {
     padding: 150px 50px;
   }
-  @media (max-width: ${variables.screenS}) {
-    padding: 100px 15px;
+  @media (max-width: ${variables.screenSmax}) {
+    padding: 70px 15px;
   }
   h1 {
     margin-bottom: 150px;
+    @media (max-width: ${variables.screenSmax}) {
+      margin-bottom: 85px;
+    }
   }
   div {
     width: 100%;

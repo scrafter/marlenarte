@@ -24,5 +24,6 @@ export const H1Styled = styled.h1`
 export const H3Styled = styled.h3`
   font-size: 36px;
   color: #fff;
+  font-weight: 300;
   font-style: italic;
 `;

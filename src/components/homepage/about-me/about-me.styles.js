@@ -9,6 +9,11 @@ export const AboutMeStyled = styled.section`
   @media (max-width: ${variables.screenS}) {
     padding: 75px 20px;
   }
+  h2 {
+    @media (max-width: ${variables.screenSmax}) {
+      margin-bottom: 50px;
+    }
+  }
 `;
 
 export const AboutMeDescription = styled.p`
@@ -20,7 +25,12 @@ export const AboutMeDescription = styled.p`
   text-indent: 3em;
   position: relative;
   margin-bottom: 110px;
-  
+  @media (max-width: ${variables.screenSmax}) {
+    line-height: 1.5em;
+    font-size: 22px;
+    text-indent: 3.5em;
+    margin-bottom: 30px;
+  }
   .mdi-icon {
     position: absolute;
     left: -50px;
@@ -36,5 +46,6 @@ export const WhatIDo = styled.div`
   justify-content: space-between;
   @media (max-width: ${variables.screenM}) {
     flex-wrap: wrap;
+    justify-content: center;
   }
 `;

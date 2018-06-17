@@ -15,8 +15,8 @@ export const WhatIDoItem = styled.div`
   text-align: center;
   position: relative;
   @media (max-width: ${variables.screenM}) {
-    width: 100%;
-    padding-bottom: 100%;
+    width: 70%;
+    padding-bottom: 70%;
     &:not(:last-of-type) {
       margin-bottom: 1px;
     }

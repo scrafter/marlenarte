@@ -22,7 +22,7 @@ export const FooterStyled = styled.footer`
   }
   .right {
     text-align: right;
-    @media (max-width: ${variables.screenS}) {
+    @media (max-width: ${variables.screenSmax}) {
       margin-top: 15px;
       text-align: left;
     }
@@ -32,7 +32,7 @@ export const FooterStyled = styled.footer`
     font-size: 14px;
     text-align: center;
     margin-top: 75px;
-    @media (max-width: ${variables.screenS}) {
+    @media (max-width: ${variables.screenSmax}) {
       margin-top: 35px;
     }
     a { 
