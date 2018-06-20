@@ -5,6 +5,7 @@ export const PortfolioItemStyled = styled.div`
   width: calc(50% - 50px);
   margin-bottom: 90px;
   position: relative;
+  cursor: pointer;
   @media (max-width: ${variables.screenMmax}) {
     width: 100%;
     margin-bottom: 50px;

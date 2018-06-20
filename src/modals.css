@@ -1,0 +1,33 @@
+.photo-modal .modal-content {
+  background-color: transparent;
+  border: 0;
+}
+.photo-modal .modal-header {
+  justify-content: flex-end;
+  padding-right: 50px;
+  border: 0;
+}
+.photo-modal .close-button {
+  background-color: transparent;
+  border: 0;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.photo-modal .modal-title {
+  float: right;
+}
+.photo-modal .modal-body {
+  width: auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.photo-modal.modal-dialog {
+  display: flex;
+  justify-content: center;
+}
+.photo-modal img {
+  max-width: calc(100vw - 50px);
+}

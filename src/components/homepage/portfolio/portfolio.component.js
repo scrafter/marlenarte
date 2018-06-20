@@ -19,8 +19,25 @@ import photo13 from '../../../assets/images/portfolio/photo13.jpg';
 import photo14 from '../../../assets/images/portfolio/photo14.jpg';
 import photo15 from '../../../assets/images/portfolio/photo15.jpg';
 import photo16 from '../../../assets/images/portfolio/photo16.jpg';
+import PhotoModal from '../../../shared/components/photo-modal/photo-modal.component';
 
 export default class Portfolio extends Component {
+  constructor() {
+    super();
+    this.state = {
+      modalOpen: false,
+      currentPhoto: '',
+    };
+    this.modalToggle = this.modalToggle.bind(this);
+  }
+
+  modalToggle(img) {
+    this.setState({
+      modalOpen: !this.state.modalOpen,
+      currentPhoto: img,
+    });
+  }
+
   render() {
     return (
       <PortfolioStyled>
@@ -29,23 +46,26 @@ export default class Portfolio extends Component {
         </Headline>
 
         <div className="container">
-          <PortfolioItem picture={photo1} />
-          <PortfolioItem picture={photo2} />
-          <PortfolioItem picture={photo3} />
-          <PortfolioItem picture={photo4} />
-          <PortfolioItem picture={photo5} />
-          <PortfolioItem picture={photo6} />
-          <PortfolioItem picture={photo7} />
-          <PortfolioItem picture={photo8} />
-          <PortfolioItem picture={photo9} />
-          <PortfolioItem picture={photo10} />
-          <PortfolioItem picture={photo11} />
-          <PortfolioItem picture={photo12} />
-          <PortfolioItem picture={photo13} />
-          <PortfolioItem picture={photo14} />
-          <PortfolioItem picture={photo15} />
-          <PortfolioItem picture={photo16} />
+          <PortfolioItem onOpen={this.modalToggle} picture={photo1} />
+          <PortfolioItem onOpen={this.modalToggle} picture={photo2} />
+          <PortfolioItem onOpen={this.modalToggle} picture={photo3} />
+          <PortfolioItem onOpen={this.modalToggle} picture={photo4} />
+          <PortfolioItem onOpen={this.modalToggle} picture={photo5} />
+          <PortfolioItem onOpen={this.modalToggle} picture={photo6} />
+          <PortfolioItem onOpen={this.modalToggle} picture={photo7} />
+          <PortfolioItem onOpen={this.modalToggle} picture={photo8} />
+          <PortfolioItem onOpen={this.modalToggle} picture={photo9} />
+          <PortfolioItem onOpen={this.modalToggle} picture={photo10} />
+          <PortfolioItem onOpen={this.modalToggle} picture={photo11} />
+          <PortfolioItem onOpen={this.modalToggle} picture={photo12} />
+          <PortfolioItem onOpen={this.modalToggle} picture={photo13} />
+          <PortfolioItem onOpen={this.modalToggle} picture={photo14} />
+          <PortfolioItem onOpen={this.modalToggle} picture={photo15} />
+          <PortfolioItem onOpen={this.modalToggle} picture={photo16} />
         </div>
+        <PhotoModal img={this.state.currentPhoto}
+                    toggle={this.modalToggle}
+                    isOpen={this.state.modalOpen}/>
       </PortfolioStyled>
     );
   }
