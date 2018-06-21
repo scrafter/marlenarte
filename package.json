@@ -41,6 +41,7 @@
     "react-dev-utils": "^5.0.1",
     "react-dom": "^16.4.0",
     "react-intl": "^2.4.0",
+    "react-particle-effect-button": "^1.0.0",
     "react-scrollable-anchor": "^0.6.1",
     "reactstrap": "^6.1.0",
     "resolve": "1.6.0",

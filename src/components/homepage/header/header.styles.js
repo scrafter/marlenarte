@@ -19,6 +19,9 @@ export const HeaderStyled = styled.header`
     background: url(${imgMobile}) no-repeat center;
     background-size: 100%;
   }
+  [class^="styles_particles"] > div {
+      padding-right: 10px;
+  }
 `;
 
 export const H1Styled = styled.h1`
@@ -26,6 +29,7 @@ export const H1Styled = styled.h1`
   margin-bottom: 35px;
   color: #fff;
   font-style: italic;
+  font-family: 'Poiret One', cursive;
   text-align: center;
 `;
 
