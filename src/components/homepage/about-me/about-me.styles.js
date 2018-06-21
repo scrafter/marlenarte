@@ -7,7 +7,7 @@ export const AboutMeStyled = styled.section`
     padding: 75px 50px;
   }
   @media (max-width: ${variables.screenS}) {
-    padding: 75px 20px;
+    padding: 10px 20px 75px;
   }
   h2 {
     @media (max-width: ${variables.screenSmax}) {
@@ -44,8 +44,14 @@ export const AboutMeDescription = styled.p`
 export const WhatIDo = styled.div`
   display: flex;
   justify-content: space-between;
-  @media (max-width: ${variables.screenM}) {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
+  & > div:last-of-type {
+     line-height: 1.7em;
+    @media (min-width: ${variables.screenM}) {
+      margin: 2px auto 0;
+    }
+  }
+  @media (max-width: ${variables.screenSmax}) {
     justify-content: center;
   }
 `;

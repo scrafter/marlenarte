@@ -1,4 +1,4 @@
-export const screenXS = '320px';
+export const screenXS = '375px';
 export const screenS = '576px';
 export const screenSmax = '767px';
 export const screenM = '768px';

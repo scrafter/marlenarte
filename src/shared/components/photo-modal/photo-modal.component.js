@@ -14,12 +14,11 @@ export default class PhotoModal extends React.Component {
   render() {
     return (
       <PhotoModalStyled>
-        <button className="btn btn-primary" onClick={this.props.toggle}>Open</button>
         <Modal isOpen={this.props.isOpen} toggle={this.props.toggle} className="photo-modal">
           <ModalBody>
             <div className="content">
               <button className="close-button" onClick={this.props.toggle}><CloseIcon color={'#fff'} /></button>
-              <img src={this.props.img} />
+              <img src={this.props.img} alt="Portfolio" />
             </div>
           </ModalBody>
         </Modal>

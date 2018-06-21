@@ -6,4 +6,7 @@ export const HomepageStyled = styled.div`
   @media (max-width: ${variables.screenSmax}) {
     margin-top: 75px;
   }
+  @media (max-width: ${variables.screenS}) {
+  margin-top: 10px;
+  }
 `;

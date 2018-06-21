@@ -32,6 +32,9 @@ export default class AboutMe extends Component {
           <WhatIDoItem>
             <FormattedMessage id="ABOUT_ME.ACRYLIC_PAINTING"/>
           </WhatIDoItem>
+          <WhatIDoItem>
+            <FormattedMessage id="ABOUT_ME.MURAL_PAINTING"/>
+          </WhatIDoItem>
         </WhatIDo>
       </AboutMeStyled>
     );

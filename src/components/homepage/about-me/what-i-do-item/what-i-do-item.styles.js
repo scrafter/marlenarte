@@ -13,6 +13,8 @@ export const WhatIDoItem = styled.div`
   text-transform: uppercase;
   word-spacing: 99999px;
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
   position: relative;
   @media (max-width: ${variables.screenM}) {
     width: 70%;
@@ -20,6 +22,10 @@ export const WhatIDoItem = styled.div`
     &:not(:last-of-type) {
       margin-bottom: 1px;
     }
+  }
+  @media (max-width: ${variables.screenXS}) {
+    font-size: 32px;
+    width: 90%;
   }
   
   span {

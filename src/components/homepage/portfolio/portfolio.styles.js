@@ -13,9 +13,40 @@ export const PortfolioStyled = styled.section`
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+    @media (max-width: ${variables.screenXS}) {
+      flex-direction: column;
+    }
+  }
+  button {
+    border: 0;
+    background-color: #fff;
+    color: #ccc;
+    font-size: 24px;
+    font-weight: 300;
+    transition: 0.3s all linear;
+    cursor: pointer;
+    &:not(:last-of-type) {
+      margin-right: 20px;
+      @media (max-width: ${variables.screenXS}) {
+        margin-right: 0;
+      }
+    }
+    &.active { color: #000; }
+    &:active,
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      color: #000;
+    }
+  }
   h1 {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     @media (max-width: ${variables.screenSmax}) {
       margin-bottom: 80px;
     }

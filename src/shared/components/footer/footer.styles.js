@@ -10,6 +10,10 @@ export const FooterStyled = styled.footer`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media (max-width: ${variables.screenXS}) {
+    padding: 45px 10px 15px;
+    word-break: break-all;
+  }
   
   div {
     display: flex;

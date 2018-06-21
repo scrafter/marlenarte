@@ -13,7 +13,6 @@ export const PortfolioItemStyled = styled.div`
   @media (max-width: ${variables.screenSmax}) {
     margin-bottom: 25px;
   }
-  
   .photo-box {
     margin-bottom: 30px;
     width: 100%;
@@ -21,7 +20,6 @@ export const PortfolioItemStyled = styled.div`
     background-size: cover;
     background-position: center;
   }
-  
   p {
     text-transform: capitalize;
     font-size: 20px;
