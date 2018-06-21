@@ -6,6 +6,7 @@ import * as variables from '../../../shared/style-variables';
 export const HeaderStyled = styled.header`
   font-family: 'Poiret One', cursive;
   width: 100%;
+  overflow: hidden;
   height: 500px;
   background-size: cover;
   display: flex;
@@ -19,8 +20,8 @@ export const HeaderStyled = styled.header`
     background: url(${imgMobile}) no-repeat center;
     background-size: 100%;
   }
-  [class^="styles_particles"] > div {
-      padding-right: 10px;
+  [class^="styles_particles"] {
+    max-width: 100vw;
   }
 `;
 
