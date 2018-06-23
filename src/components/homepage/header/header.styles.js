@@ -23,6 +23,9 @@ export const HeaderStyled = styled.header`
   [class^="styles_particles"] {
     max-width: 100vw;
   }
+  [class^="styles_particles"] > div {
+    padding-right: 10px;
+  }
 `;
 
 export const H1Styled = styled.h1`
