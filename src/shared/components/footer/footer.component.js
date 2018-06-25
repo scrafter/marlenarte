@@ -23,8 +23,8 @@ export default class Footer extends Component {
             </a>
           </p>
           <p>
-            <a href="mailto:misiewicz.marlena08@gmail.com">
-              misiewicz.marlena08@gmail.com
+            <a href="mailto:kontakt@madlenarte.pl">
+              kontakt@madlenarte.pl
             </a>
           </p>
         </div>

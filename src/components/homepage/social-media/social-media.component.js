@@ -12,13 +12,16 @@ export default class SocialMedia extends Component {
           <FormattedMessage id="SOCIAL_MEDIA.TITLE" />
         </Headline>
         <div>
-          <a href="http://www.facebook" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/Marlena-Misiewicz-1767131209977034/"
+             target="_blank" rel="noopener noreferrer">
             <FacebookBoxIcon className="facebook" size={140}/>
           </a>
-          <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href="http://www.instagram.com"
+             target="_blank" rel="noopener noreferrer">
             <InstagramIcon size={140}/>
           </a>
-          <a href="http://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a href="http://www.linkedin.com"
+             target="_blank" rel="noopener noreferrer">
             <LinkedinBoxIcon size={140}/>
           </a>
         </div>
