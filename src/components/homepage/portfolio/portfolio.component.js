@@ -8,6 +8,7 @@ import drawing2 from '../../../assets/images/portfolio/drawing/drawing2.jpg';
 import drawing3 from '../../../assets/images/portfolio/drawing/drawing3.jpg';
 import drawing4 from '../../../assets/images/portfolio/drawing/drawing4.jpg';
 import drawing5 from '../../../assets/images/portfolio/drawing/drawing5.jpg';
+import drawing6 from '../../../assets/images/portfolio/drawing/drawing6.jpg';
 import mural1 from '../../../assets/images/portfolio/mural-painting/mural1.jpg';
 import mural2 from '../../../assets/images/portfolio/mural-painting/mural2.jpg';
 import mural3 from '../../../assets/images/portfolio/mural-painting/mural3.jpg';
@@ -17,12 +18,14 @@ import mural6 from '../../../assets/images/portfolio/mural-painting/mural6.jpg';
 import painting1 from '../../../assets/images/portfolio/painting/painting1.jpg';
 import painting2 from '../../../assets/images/portfolio/painting/painting2.jpg';
 import painting3 from '../../../assets/images/portfolio/painting/painting3.jpg';
-import painting4 from '../../../assets/images/portfolio/painting/paiting4.jpg';
-import painting5 from '../../../assets/images/portfolio/painting/paiting5.jpg';
-import painting6 from '../../../assets/images/portfolio/painting/paiting6.jpg';
-import painting7 from '../../../assets/images/portfolio/painting/paiting7.jpg';
+import painting4 from '../../../assets/images/portfolio/painting/painting4.jpg';
+import painting5 from '../../../assets/images/portfolio/painting/painting5.jpg';
+import painting6 from '../../../assets/images/portfolio/painting/painting6.jpg';
+import painting7 from '../../../assets/images/portfolio/painting/painting7.jpg';
 import painting8 from '../../../assets/images/portfolio/painting/painting8.jpg';
 import painting9 from '../../../assets/images/portfolio/painting/painting9.jpg';
+import painting10 from '../../../assets/images/portfolio/painting/painting10.jpg'
+import painting11 from '../../../assets/images/portfolio/painting/painting11.jpg'
 import PhotoModal from '../../../shared/components/photo-modal/photo-modal.component';
 
 export default class Portfolio extends Component {
@@ -77,6 +80,7 @@ export default class Portfolio extends Component {
             <PortfolioItem onOpen={this.modalToggle} picture={drawing3} />
             <PortfolioItem onOpen={this.modalToggle} picture={drawing4} />
             <PortfolioItem onOpen={this.modalToggle} picture={drawing5} />
+            <PortfolioItem onOpen={this.modalToggle} picture={drawing6} />
           </div>
         }
         {
@@ -90,6 +94,8 @@ export default class Portfolio extends Component {
             <PortfolioItem onOpen={this.modalToggle} picture={painting7} />
             <PortfolioItem onOpen={this.modalToggle} picture={painting8} />
             <PortfolioItem onOpen={this.modalToggle} picture={painting9} />
+            <PortfolioItem onOpen={this.modalToggle} picture={painting10} />
+            <PortfolioItem onOpen={this.modalToggle} picture={painting11} />
           </div>
         }
         {
